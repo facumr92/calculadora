@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;600&family=Mukta&family=Unbounded:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+:root {
+  ---primario: rgb(1, 58, 104);
+  ---secundario: rgb(247, 217, 128);
+  ---blanco: #fff;
+  ---gris: #9b9797;
+  ---contraste: rgb(15, 162, 235);
+}
+
+body {
+  background-color: var(---primario);
+  color: var(---secundario);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  background-color: var(---contraste);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+@media (max-width: 415px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.instrucciones {
+  margin-bottom: 1rem;
+}
+
+.numero-ingresado {
+  padding: 1rem;
+}
+
+.numero-input {
+  color: var(---blanco);
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.calcu-contenedor {
+  background-color: var(---secundario);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.contenedor-num-op {
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btnum {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-color: var(---secundario);
+  color: var(---primario);
+}
+
+.btnum:hover {
+  background-color: var(---gris);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  margin-bottom: 0;
+}
